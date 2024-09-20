@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DenysDeibuk.TaskPlanner.Dom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DenysDeibuk.TaskPlanner.ConsoleRunner", "DenysDeibuk.TaskPlanner.ConsoleRunner\DenysDeibuk.TaskPlanner.ConsoleRunner.csproj", "{79B1C5A5-59B4-40CA-84FA-7F556F44158B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DenysDeibuk.TaskPlanner.DataAccess.Abstractions", "ClassLibraryProjects\DenysDeibuk.TaskPlanner.DataAccess.Abstractions\DenysDeibuk.TaskPlanner.DataAccess.Abstractions.csproj", "{C31CA01A-F618-4575-BA92-12F748A134E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DenysDeibuk.TaskPlanner.DataAccess", "ClassLibraryProjects\DenysDeibuk.TaskPlanner.DataAccess\DenysDeibuk.TaskPlanner.DataAccess.csproj", "{144A598A-7DD2-40E5-A5B8-F5E3DA9601F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,8 +30,18 @@ Global
 		{79B1C5A5-59B4-40CA-84FA-7F556F44158B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79B1C5A5-59B4-40CA-84FA-7F556F44158B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79B1C5A5-59B4-40CA-84FA-7F556F44158B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C31CA01A-F618-4575-BA92-12F748A134E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C31CA01A-F618-4575-BA92-12F748A134E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C31CA01A-F618-4575-BA92-12F748A134E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C31CA01A-F618-4575-BA92-12F748A134E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{144A598A-7DD2-40E5-A5B8-F5E3DA9601F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{144A598A-7DD2-40E5-A5B8-F5E3DA9601F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{144A598A-7DD2-40E5-A5B8-F5E3DA9601F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{144A598A-7DD2-40E5-A5B8-F5E3DA9601F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DC32D4C8-78BC-4EA5-8BA9-2605B34BEEEA} = {94C1925E-A051-424B-85AD-C58ECA69D02C}
+		{C31CA01A-F618-4575-BA92-12F748A134E1} = {94C1925E-A051-424B-85AD-C58ECA69D02C}
+		{144A598A-7DD2-40E5-A5B8-F5E3DA9601F9} = {94C1925E-A051-424B-85AD-C58ECA69D02C}
 	EndGlobalSection
 EndGlobal

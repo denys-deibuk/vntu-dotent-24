@@ -3,8 +3,9 @@
 using System;
 using DenysDeibuk.TaskPlanner.Domain.Models.Enums;
 
-public class WorkItem
+public class WorkItem : ICloneable
 {
+  public Guid Id { get; set; }
   public DateTime CreationDate { get; set; }
   public DateTime DueDate { get; set; }
   public Priority Priority { get; set; }
@@ -15,7 +16,12 @@ public class WorkItem
 
   public override string ToString()
   {
-    return $"{Title}: due {DueDate:dd.MM.yyyy}, {Priority.ToString().ToLower()} priority";
+    return $"Id: {Id}, {Title}: due {DueDate:dd.MM.yyyy}, {Priority.ToString().ToLower()} priority";
+  }
+
+  public object Clone()
+  {
+    return this.MemberwiseClone();
   }
 }
 
