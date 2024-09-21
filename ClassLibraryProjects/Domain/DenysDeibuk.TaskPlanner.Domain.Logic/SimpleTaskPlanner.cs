@@ -23,7 +23,7 @@ public class SimpleTaskPlanner
           return string.Compare(x.Title, y.Title, StringComparison.OrdinalIgnoreCase);
         });
 
-    return workItemList.ToArray();
+    return workItemList.Where(x => x.IsCompleted is false).ToArray();
   }
 }
 
