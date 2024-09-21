@@ -123,14 +123,12 @@ internal static class Program
 
   private static void BuildPlan(FileWorkItemsRepository fileWorkItemsRepository, SimpleTaskPlanner taskPlanner)
   {
-    List<WorkItem> workItems = fileWorkItemsRepository.GetAll().ToList();
-    if (workItems.Count == 0)
-    {
+    WorkItem[] sortedWorkItems = taskPlanner.CreatePlan(fileWorkItemsRepository);
+
+    if (sortedWorkItems.Length == 0) {
       Console.WriteLine("Немає завдань для побудови плану.");
       return;
     }
-
-    WorkItem[] sortedWorkItems = taskPlanner.CreatePlan(fileWorkItemsRepository);
 
     Console.WriteLine("\nСписок завдань:");
     foreach (WorkItem item in sortedWorkItems)
