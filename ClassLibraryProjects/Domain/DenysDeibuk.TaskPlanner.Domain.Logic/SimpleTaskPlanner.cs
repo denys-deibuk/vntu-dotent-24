@@ -1,13 +1,14 @@
 ﻿using DenysDeibuk.TaskPlanner.Domain.Models;
+using DenysDeibuk.TaskPlanner.DataAccess.Abstractions;
 
 namespace DenysDeibuk.TaskPlanner.Domain.Logic;
 
 
 public class SimpleTaskPlanner
 {
-  public WorkItem[] CreatePlan(WorkItem[] workItems)
+  public WorkItem[] CreatePlan(IWorkItemsRepository fileWorkItemsRepository)
   {
-    List<WorkItem> workItemList = workItems.ToList();
+    List<WorkItem> workItemList = fileWorkItemsRepository.GetAll().ToList();
 
     workItemList.Sort((x, y) =>
         {

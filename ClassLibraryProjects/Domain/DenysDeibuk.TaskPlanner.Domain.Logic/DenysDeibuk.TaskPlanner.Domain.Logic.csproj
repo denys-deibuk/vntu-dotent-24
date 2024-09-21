@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DenysDeibuk.TaskPlanner.Domain.Models\DenysDeibuk.TaskPlanner.Domain.Models.csproj" />
+    <ProjectReference Include="..\..\DataAccess\DenysDeibuk.TaskPlanner.DataAccess\DenysDeibuk.TaskPlanner.DataAccess.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

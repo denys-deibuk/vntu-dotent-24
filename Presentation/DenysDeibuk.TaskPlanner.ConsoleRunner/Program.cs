@@ -130,7 +130,7 @@ internal static class Program
       return;
     }
 
-    WorkItem[] sortedWorkItems = taskPlanner.CreatePlan(workItems.ToArray());
+    WorkItem[] sortedWorkItems = taskPlanner.CreatePlan(fileWorkItemsRepository);
 
     Console.WriteLine("\nСписок завдань:");
     foreach (WorkItem item in sortedWorkItems)
