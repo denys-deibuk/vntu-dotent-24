@@ -5,13 +5,13 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClassLibraryProjects", "ClassLibraryProjects", "{94C1925E-A051-424B-85AD-C58ECA69D02C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DenysDeibuk.TaskPlanner.Domain.Models", "ClassLibraryProjects\DenysDeibuk.TaskPlanner.Domain.Models\DenysDeibuk.TaskPlanner.Domain.Models.csproj", "{DC32D4C8-78BC-4EA5-8BA9-2605B34BEEEA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DenysDeibuk.TaskPlanner.Domain.Models", "ClassLibraryProjects\Domain\DenysDeibuk.TaskPlanner.Domain.Models\DenysDeibuk.TaskPlanner.Domain.Models.csproj", "{DC32D4C8-78BC-4EA5-8BA9-2605B34BEEEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DenysDeibuk.TaskPlanner.ConsoleRunner", "DenysDeibuk.TaskPlanner.ConsoleRunner\DenysDeibuk.TaskPlanner.ConsoleRunner.csproj", "{79B1C5A5-59B4-40CA-84FA-7F556F44158B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DenysDeibuk.TaskPlanner.ConsoleRunner", "Presentation\DenysDeibuk.TaskPlanner.ConsoleRunner\DenysDeibuk.TaskPlanner.ConsoleRunner.csproj", "{79B1C5A5-59B4-40CA-84FA-7F556F44158B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DenysDeibuk.TaskPlanner.DataAccess.Abstractions", "ClassLibraryProjects\DenysDeibuk.TaskPlanner.DataAccess.Abstractions\DenysDeibuk.TaskPlanner.DataAccess.Abstractions.csproj", "{C31CA01A-F618-4575-BA92-12F748A134E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DenysDeibuk.TaskPlanner.DataAccess.Abstractions", "ClassLibraryProjects\DataAccess\DenysDeibuk.TaskPlanner.DataAccess.Abstractions\DenysDeibuk.TaskPlanner.DataAccess.Abstractions.csproj", "{C31CA01A-F618-4575-BA92-12F748A134E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DenysDeibuk.TaskPlanner.DataAccess", "ClassLibraryProjects\DenysDeibuk.TaskPlanner.DataAccess\DenysDeibuk.TaskPlanner.DataAccess.csproj", "{144A598A-7DD2-40E5-A5B8-F5E3DA9601F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DenysDeibuk.TaskPlanner.DataAccess", "ClassLibraryProjects\DataAccess\DenysDeibuk.TaskPlanner.DataAccess\DenysDeibuk.TaskPlanner.DataAccess.csproj", "{144A598A-7DD2-40E5-A5B8-F5E3DA9601F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

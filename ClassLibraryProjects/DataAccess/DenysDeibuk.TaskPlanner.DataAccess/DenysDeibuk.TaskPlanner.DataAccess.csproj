@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Domain\DenysDeibuk.TaskPlanner.Domain.Models\DenysDeibuk.TaskPlanner.Domain.Models.csproj" />
     <ProjectReference Include="..\DenysDeibuk.TaskPlanner.DataAccess.Abstractions\DenysDeibuk.TaskPlanner.DataAccess.Abstractions.csproj" />
-    <ProjectReference Include="..\DenysDeibuk.TaskPlanner.Domain.Models\DenysDeibuk.TaskPlanner.Domain.Models.csproj" />
   </ItemGroup>
 
   <ItemGroup>
