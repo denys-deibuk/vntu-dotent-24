@@ -2,13 +2,14 @@
 using DenysDeibuk.TaskPlanner.Domain.Models.Enums;
 using DenysDeibuk.TaskPlanner.Domain.Logic;
 using DenysDeibuk.TaskPlanner.DataAccess;
+using DenysDeibuk.TaskPlanner.DataAccess.Abstractions;
 namespace DenysDeibuk.TaskPlanner.ConsoleRunner;
 
 internal static class Program
 {
   public static void Main(string[] args)
   {
-    FileWorkItemsRepository fileWorkItemsRepository = new FileWorkItemsRepository();
+    IWorkItemsRepository fileWorkItemsRepository = new FileWorkItemsRepository();
     SimpleTaskPlanner taskPlanner = new SimpleTaskPlanner();
     string? input;
 
@@ -56,12 +57,12 @@ internal static class Program
     }
   }
 
-  private static void SaveChanges(FileWorkItemsRepository fileWorkItemsRepository)
+  private static void SaveChanges(IWorkItemsRepository fileWorkItemsRepository)
   {
     fileWorkItemsRepository.SaveChanges();
   }
 
-  private static void AddWorkItem(FileWorkItemsRepository fileWorkItemsRepository)
+  private static void AddWorkItem(IWorkItemsRepository fileWorkItemsRepository)
   {
     string? title;
     while (true)
@@ -121,11 +122,12 @@ internal static class Program
     Console.WriteLine("Завдання додано успішно.");
   }
 
-  private static void BuildPlan(FileWorkItemsRepository fileWorkItemsRepository, SimpleTaskPlanner taskPlanner)
+  private static void BuildPlan(IWorkItemsRepository fileWorkItemsRepository, SimpleTaskPlanner taskPlanner)
   {
     WorkItem[] sortedWorkItems = taskPlanner.CreatePlan(fileWorkItemsRepository);
 
-    if (sortedWorkItems.Length == 0) {
+    if (sortedWorkItems.Length == 0)
+    {
       Console.WriteLine("Немає завдань для побудови плану.");
       return;
     }
@@ -137,7 +139,7 @@ internal static class Program
     }
   }
 
-  private static void MarkWorkItemAsCompleted(FileWorkItemsRepository fileWorkItemsRepository)
+  private static void MarkWorkItemAsCompleted(IWorkItemsRepository fileWorkItemsRepository)
   {
     Console.WriteLine("Введіть ID завдання для позначення як виконаного:");
     Guid id;
@@ -162,7 +164,7 @@ internal static class Program
     }
   }
 
-  private static void RemoveWorkItem(FileWorkItemsRepository fileWorkItemsRepository)
+  private static void RemoveWorkItem(IWorkItemsRepository fileWorkItemsRepository)
   {
     Console.WriteLine("Введіть ID завдання для видалення:");
     Guid id;

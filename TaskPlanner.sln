@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DenysDeibuk.TaskPlanner.Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DenysDeibuk.TaskPlanner.DataAccess", "ClassLibraryProjects\DataAccess\DenysDeibuk.TaskPlanner.DataAccess\DenysDeibuk.TaskPlanner.DataAccess.csproj", "{144A598A-7DD2-40E5-A5B8-F5E3DA9601F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{3AABCAB0-E866-4EED-BF5A-4D2CF747D110}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{144A598A-7DD2-40E5-A5B8-F5E3DA9601F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{144A598A-7DD2-40E5-A5B8-F5E3DA9601F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{144A598A-7DD2-40E5-A5B8-F5E3DA9601F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AABCAB0-E866-4EED-BF5A-4D2CF747D110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AABCAB0-E866-4EED-BF5A-4D2CF747D110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AABCAB0-E866-4EED-BF5A-4D2CF747D110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AABCAB0-E866-4EED-BF5A-4D2CF747D110}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DC32D4C8-78BC-4EA5-8BA9-2605B34BEEEA} = {94C1925E-A051-424B-85AD-C58ECA69D02C}
